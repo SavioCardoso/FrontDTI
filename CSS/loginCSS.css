@@ -1,0 +1,490 @@
+/* ARQUIVO CSS, ONDE ACONTECE TODA A ESTILIZAÇÃO DO SITE
+ @author Sávio Cardoso */
+
+
+/* CSS GERAL DO SITE */
+/* CONTAINER DA PÁGINA */
+html{
+  margin: 0;
+}
+
+body{
+  background-color: #f4f4f4;
+  font-family: 'Niramit', sans-serif;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* LINKS */
+a{
+  text-decoration: none;
+  color: black;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* PARÁGRAFOS */
+p{
+  font-size: 20px;
+  text-align: justify;
+  line-height: 25px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+/* BOTÕES */
+button:hover{
+  cursor: pointer;
+}
+
+button{
+  border: none;
+  border-radius: 0%;
+}
+
+.btnPadrao{
+  padding:20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10%;
+  background-color: #504c9f;
+  color: white;
+}
+
+.btnPadrao:hover{
+  background-color: #313b85;
+}
+
+/* INPUTS E LABELS */
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #585e61;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  background-color: rgba(76, 157, 237, 0) !important;
+  font-family: 'Niramit', sans-serif;
+}
+
+textarea{
+  font-size: 20px;
+  font-family: 'Niramit', sans-serif;
+  resize: none;
+}
+
+label{
+  font-size: 25px;
+}
+
+/* TÍTULOS E SUBTÍTULOS*/
+.titulo{
+  font-size: 70px;
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+}
+
+.subTitulo{
+  font-size: 50px;
+  color: #504c9f;
+  margin-left: 10%;
+}
+
+/* HEADER */
+.header {
+  padding: 0px;
+  text-align: center;
+  background: #2db5c3;
+  color: white;
+  width: 100%;
+  height: 20%;
+}
+
+.header img{
+  width: 180px;
+  height: 180px;
+}
+
+/* NAVBAR */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* CONTEÚDO CENTRAL DA PÁGINA */
+.conteudo{
+  padding-top: 0%;
+  padding-bottom: calc(200px + 5%);
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*  FOOTER */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  background-color: white;
+}
+
+.tituloNomesFooter{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.divNomesFooter{
+  float: left;
+  width: 25%;
+  height: 180px;
+  margin-top: 0;
+  color: black;
+}
+
+.nomesFooter1{
+  text-align: center;
+  font-size: 22px;
+}
+
+.divLogoFooter{
+  float: left;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+  height: 170px;
+}
+
+.divLogoFooter img{
+  width: 150px;
+  height: 150px;
+}
+
+.divSocialFooter{
+  text-align: left;
+  float: right;
+  width: 25%;
+  height: 180px;
+  margin-top: 0;
+}
+
+.tituloSocialFooter{
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.imagensFooter{
+  text-align: center;
+}
+
+.twitterimg{
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.instagramimg{
+  margin-left: 15px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* CSS Login */
+
+/* DIV DE LOGIN */
+#divLogin{
+  width: 40%;
+  margin-left: 30%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: white;
+  margin-top: 5%;
+  display: block;
+}
+
+/* BOTÃO AUTENTICAR */
+#btnAutenticar{
+  margin-left: 40%;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color: white;
+}
+
+/* LINK PARA POSTERIOR PÁGINA DE CADASTRO */
+#atalhoCadastrarLogin{
+  text-align: center;
+  margin-top: -20px;
+}
+
+/* BOTÃO DE MOSTRAR/ESCONDER SENHA */
+#btnVisibilidadeSenha{
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+
+/* INPUT DE SENHA */
+#senhaLogin{
+  float: left;
+  padding-right: 100px;
+  width: 84%;
+}
+
+/* MENSAGEM DE ERRO DURANTE O LOGIN */
+#verificaLogin{
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+/* INPUTS GERAIS DA TELA DE LOGIN */
+.formInputs{
+  margin-left: 10%;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+/* INPUTS GERAIS DA TELA DE LOGIN:HOVER */
+.formInputs:hover{
+  cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* CSS CV */
+
+/* DIV COMPLETA DO CURRÍCULO */
+#cv{
+  background-color: white;
+  margin-top: 5%;
+  display: none;
+  margin-left: 15%;
+  margin-right: 15%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* ESTILIZANDO O HEADER DO CV */
+.cvHeader{
+  background-image: url(../imagens/headerCV.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  margin-top: 0px;
+  color: white;
+}
+
+.cvHeader h1{
+  font-size: 80px;
+  padding-top: 4%;
+  margin-bottom: 0;
+  margin-left: 7%;
+}
+
+.cvHeader h2{
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-left: 7%;
+}
+
+#perfilCV{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid white;
+  float:right;
+  margin-top: -200px;
+  margin-right: 100px;
+}
+
+/* -------------------------- */
+
+/* ESTILIZANDO O LADO ESQUERDO DO CV */
+.cvLeft{
+  background-color: white;
+  float: left;
+  width: 55%;
+}
+
+/* BLOCO DE HABILIDADES */
+#divHabilidades{
+  margin-top: 5%;
+}
+
+#divHabilidades h1{
+  margin-left: 7%;
+  font-size: 40px;
+}
+
+#divHabilidades ul{
+  margin-left: 7%;
+  font-size: 30px;
+}
+
+/* BLOCO DE FORMAÇÃO */
+#divFormacao{
+  margin-top: 10%;
+}
+
+#divFormacao h1{
+  margin-left: 7%;
+  font-size: 32px;
+}
+
+#divFormacao h2{
+  margin-left: 7%;
+  font-size: 25px;
+}
+
+#divFormacao h3{
+  margin-left: 7%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+/* BLOCO DE PROJETOS */
+#divProjetos{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+#divProjetos h1{
+  margin-left: 7%;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+#divProjetos h2{
+  margin-left: 7%;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+#divProjetos h3{
+  margin-left: 7%;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#divProjetos a{
+  margin-left: 7%;
+  font-size: 20px;
+  margin-top: 0;
+  font-style: italic;
+}
+
+#divProjetos p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* --------------------------- */
+
+/* ESTILIZANDO O LADO DIREITO DO CV */
+.cvRight{
+  background-color: #333;
+  color: white;
+  float: right;
+  width: 45%;
+}
+
+/* BLOCO SOBRE */
+#divSobre{
+  margin-top: 25%;
+}
+
+#divSobre h1{
+  font-size: 50px;
+  margin-left: 7%;
+}
+
+#divSobre p{
+  font-size: 25px;
+}
+
+/* BLOCO CONTATO */
+#divContato{
+  margin-top: 30%;
+  margin-bottom: 21.5%;
+}
+
+#divContato h1{
+  font-size: 40px;
+  margin-left: 7%;
+}
+
+#divContato h2{
+  font-size: 25px;
+  margin-left: 7%;
+  margin-right: 7%;
+  font-weight: normal;
+}
+
+#divContato h3{
+  font-size: 25px;
+  margin-left: 7%;
+  margin-right: 7%;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+#divContato a{
+  font-size: 25px;
+  margin-left: 7%;
+  margin-right: 7%;
+  color: white;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+}
+
+#downloadpdf{
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 25% !important;
+}

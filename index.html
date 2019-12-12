@@ -1,0 +1,150 @@
+ <!-- ARQUIVO HTML, ONDE ACONTECE TODA A ESTRUTURAÇÃO VISUAL DO SITE
+ @author Sávio Cardoso  -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>dti Digital</title>
+        <link rel="stylesheet" href="CSS\loginCSS.css">
+        <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+        <link rel="icon" href="imagens/dtiIcon.png">
+    </head>
+    <body>
+        <!-- CABEÇALHO DA PÁGINA -->
+        <div class="header">
+            <img src="imagens/dtiLogo.png">
+        </div>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <div class="navbar">
+          <a href="login.html" class="right active" id="log">Entrar</a>
+        </div>
+        <!-- CONTEUDO DA PÁGINA -->
+        <div class="conteudo">
+            <!-- PÁGINA DE LOGIN (APARECE QUANDO O USUÁRIO ESTÁ DESLOGADO) -->
+            <div id="divLogin">
+                <h2 class="subTitulo">Entrar</h2>
+                <!-- FORMULÁRIO DE LOGIN -->
+                <form class="formInputs" method="post">
+                    <label for="nomeLogin">Email:</label> <input type="email" name="nomeLogin" id="nomeLogin" autofocus>
+                    <label for="senhaLogin">Senha:</label> <input type="password" name="senhaLogin" id="senhaLogin">
+                    <a class="visibilidadeSenha"><img src="imagens/defaultPassword.png" id="btnVisibilidadeSenha"></a>
+                    <div id="verificaLogin">Login incorreto. Tente novamente.</div>
+                </form>
+                <button type="submit" name="btnAutenticar" id="btnAutenticar" class="btnPadrao">Autenticar</button>
+                <!-- LINK QUE LEVARIA A UMA POSSÍVEL PÁGINA DE CADASTRO -->
+                <a href=""><h2 id="atalhoCadastrarLogin">Ainda não tem uma conta? Cadastre-se aqui</h2><a>
+            </div>
+
+            <!-- PÁGINA DE CURRÍCULO (APARECE QUANDO O USUÁRIO ESTÁ LOGADO) -->
+            <div id="cv">
+                <!-- CABEÇALHO DO CV -->
+                <div class="cvHeader"><br>
+                    <h1>Sávio Cardoso</h1>
+                    <h2>ESTÁGIO DESENVOLVEDOR</h2>
+                </div>
+                <!-- LADO ESQUERDO DO CV -->
+                <div class="cvLeft">
+                    <!-- BLOCO DE HABILIDADES -->
+                    <div id="divHabilidades">
+                        <h1>HABILIDADES</h1>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS, Bootstrap</li>
+                            <li>Java</li>
+                            <li>C/C++</li>
+                            <li>MySQL</li>
+                            <li>PostgreeSQL</li>
+                            <li>CyberLinkPowerDirector (Básico)</li>
+                            <li>GIT</li>
+                        </ul>
+                    </div>
+                    <!-- BLOCO DE FORMACAO -->
+                    <div id="divFormacao">
+                        <h1>FORMAÇÃO ACADÊMICA</h1>
+                        <h2>CURSO TÉCNICO INFORMÁTICA</h2>
+                        <h3>CEFET-MG</h3>
+                        <h3>2017 - 2019</h3>
+                        <p>Cursei  o ensino técnico integrado em informática no CEFET-MG, onde tive o meu primeiro contato com a programação e aprendi a grande maioria das linguagens que domino.</p>
+                    </div>
+                    <!-- BLOCO DE PROJETOS -->
+                    <div id="divProjetos">
+                        <h1>PROJETOS</h1>
+                        <!-- PROJETO 1 -->
+                        <h2>SISTEMA STAY GREEN</h2>
+                        <p>Sistema de gerenciamento de agronegócio</p>
+                        <h3>Desenvolvimento Front-End</h3>
+                        <a href="https://www.github.com/sistema-stay-green" target="_blank">github.com/sistema-stay-green</a>
+                        <!-- PROJETO 2 -->
+                        <h2>ÁGORA</h2>
+                        <p>Sistema de auxílio a conselho de classes</p>
+                        <h3>Líder de desenvolvimento Front-End</h3>
+                        <a href="https://www.github.com/A-Agora" target="_blank">github.com/A-Agora</a>
+                    </div>
+                </div>
+                <!-- LADO DIREITO DO CV -->
+                <div class="cvRight">
+                    <!-- FOTO DE PERFIL -->
+                    <img src="imagens/perfil.jpg" id="perfilCV">
+                    <!-- BLOCO SOBRE -->
+                    <div id="divSobre">
+                       <h1>Quem sou eu?</h1>
+                       <p>Olá, me chamo Sávio Cardoso dos
+                          Santos, completei meus 18 anos em
+                          setembro de 2019, e 3 meses após essa
+                          entrada na vida adulta me formei no
+                          CEFET-MG.
+                       </p>
+                       <p>Sempre fui fascinado por jogos
+                          eletrônicos e um amante dos e-sports,
+                          sendo esse o principal influenciador na
+                          escolha do meu curso técnico em
+                          informática em 2017.
+                       </p>
+                       <p>Procuro um estágio na área de
+                          desenvolvimento no qual eu possa
+                          aprender com desenvolvedores mais
+                          experientes e colegas de equipe, e
+                          principalmente estimular e colocar em
+                          prática a minha criatividade
+                       </p>
+                    </div>
+                    <!-- BLOCO CONTATO -->
+                    <div id="divContato">
+                        <h1>Contato</h1>
+                        <h2>Rua Isabel Paula de Oliveira, 125
+                        Canaã, Ibirité-MG</h2>
+                        <h2>(31)99625-3267</h2>
+                        <h3>savioshippuden13@gmail.com</h3>
+                        <a href="https://www.linkedin.com/in/savio-cardoso" target="_blank">linkedin.com/in/savio-cardoso</a>
+                        <a href="https://www.github.com/SavioCardoso" target="_blank">github.com/SavioCardoso</a>
+                        <a href="https://www.mediafire.com/file/azy1cq4icmiaqzq/SavioCardoso_CV.pdf/file" target="_blank" id="downloadpdf">Baixar o PDF do Currículo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- RODAPÉ DA PÁGINA -->
+        <div class="footer">
+           <!-- BLOCO DE NOMES DE DESENVOLVEDORES -->
+           <div class="divNomesFooter">
+              <p class="tituloNomesFooter">Site desenvolvido por:</p>
+              <p class="nomesFooter1" color="black"><a href="https://github.com/SavioCardoso" target="_blank">Sávio Cardoso</a></p>
+           </div>
+           <!-- LOGO DO RODAPÉ -->
+           <div class="divLogoFooter">
+              <img src="imagens/dtiIcon.png">
+           </div>
+           <!-- REDES SOCIAIS DA EMPRESA -->
+           <div class="divSocialFooter">
+               <p class="tituloSocialFooter"> Siga-nos:</p>
+               <div class="imagensFooter">
+                 <a href="https://www.facebook.com/dtidigitalcrafters/" target="_blank"><img src="imagens/facebook.png" width="55" height="55" class="faceimg"></a>
+                 <a href="https://twitter.com/dtidigital" target="_blank"><img src="imagens/twitter.png" width="30" height="30" class="twitterimg"></a>
+                 <a href="https://www.instagram.com/dtidigital/" target="_blank"><img src="imagens/instagram.png" width="50" height="50" class="instagramimg"></a>
+              </div>
+           </div>
+        </div>
+        <!-- SCRIPT UTILIZADO NA PÁGINA -->
+        <script src="JS\loginJS.js"></script>
+    </body>
+</html>
